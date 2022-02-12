@@ -1,5 +1,4 @@
-# SLT BrecLand <https://t.me/SLTBrecLand>
-# @Damantha_Jasinghe
+
 
 from pyrogram.types.bots_and_keyboards import reply_keyboard_markup
 from DTSongBot.plugins import *
@@ -9,10 +8,10 @@ from DTSongBot import DTbot as app
 from DTSongBot import LOGGER
 
 pm_start_text = """
-Heya [{}](tg://user?id={}), I'm 🎧 Song Download bot  🎵
+Heya [{}](tg://user?id={}), I'm 🎧 {BOT_NAME}  🎵
 Do /help for know my commands
-A bot by @Damantha_Jasinghe
-Updates channel @ankivectorUpdates
+A bot by @{YOUR_USERNAME}
+Updates channel @{UPDATE_CHANNEL}
 """
 
 help_text = """
@@ -21,7 +20,7 @@ My commands👇
 - /saavn <song name>: download songs via JioSaavn
 - /deezer <song name>: download songs via Deezer
 - Send youtube url to my pm for download it on audio format
-A bot by @ankivectorUpdates
+A bot by @{YOUR_USERNAME}
 """
 
 @app.on_message(filters.command("start"))
@@ -34,10 +33,10 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Updates channel", url="https://t.me/ankivectorUpdates"
+                        text="Updates channel", url="https://t.me/{UPDATE_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        text="Support Group", url="https://t.me/AnkiSupport_Official"
+                        text="Support Group", url="https://t.me/{UPDATE_GROUP}"
                     )
                 ]
             ]
@@ -51,5 +50,5 @@ async def start(client, message):
     await message.reply(help_text)
 
 app.start()
-LOGGER.info("DTSongBot is online.")
+LOGGER.info("Song Bot is online.")
 idle()
