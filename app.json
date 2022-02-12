@@ -1,5 +1,5 @@
 {
-    "name": "DT-SongBot",
+    "name": "Song Bot",
     "description": "A bot that can download songs.",
     "keywords": [
         "DTSongBot",
@@ -8,7 +8,7 @@
         "DT Bots"
     ],
     "website": "https://damantha.tk/web",
-    "repository": "https://github.com/Damantha126/DT-Songbot",
+    "repository": "https://github.com/MY-Web-2/Song-Bot-Test",
     "logo": "https://telegra.ph/file/0e9b3fdd3531e65ab53fb.jpg",
 
     "success_url": "https://t.me/damantha.tk/web",
@@ -22,6 +22,22 @@
             "value": ""
         },
         "API_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+                "YOUR_USERNAME": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+                "BOT_NAME": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+                "UPDATE_CHANNEL": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+                "UPDATE_GROUP": {
             "description": "Your APP ID from my.telegram.org",
             "value": ""
         }
